@@ -29,5 +29,5 @@
 
 ```bash
 git clone https://github.com/Me-amruth/fullscreendp-wa.git
-cd fullscreen-dp-wa
+cd fullscreendp-wa
 npm install

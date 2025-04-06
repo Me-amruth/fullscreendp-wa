@@ -28,6 +28,6 @@
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/fullscreen-dp-wa.git
+git clone https://github.com/Me-amruth/fullscreendp-wa.git
 cd fullscreen-dp-wa
 npm install

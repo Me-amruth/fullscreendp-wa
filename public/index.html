@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WhatsApp Full Screen DP Setter</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <h1>Set Your WhatsApp Full Screen DP</h1>
   <p class="description">
-    Want to stand out with a stylish full-screen DP? Just upload your photo and enter your WhatsApp number. We'll handle the rest.
-    <br><br>✨ Make a bold impression. Be unforgettable.
+    Want to stand out with a stylish full-screen DP? Just upload your photo and enter your WhatsApp number. We'll handle
+    the rest.
   </p>
 
+  
   <form id="uploadForm">
+    <button type='button' onclick="openModal()">ℹ️ Info</button>
+
+    
     <label for="imageInput">📸 Upload Image</label>
     <input type="file" id="imageInput" accept="image/*" />
 
@@ -30,6 +36,25 @@
 
   <p class="footer">Crafted with ❤️ by Amruth ✨</p>
 
+<!-- Info Popup Modal -->
+<div id="infoModal" class="modal">
+  <div class="modal-content">
+    <h2>📌 Before You Start</h2>
+    <ul>
+      <li>📱 Please enter your full WhatsApp number with country code, but *without* the '+' symbol. (Example: <strong>91XXXXXXXXXX</strong>)</li>
+      <li>🖼️ Upload a high-quality, vertical image (preferably in 9:16 ratio) for the best full screen DP result.</li>
+      <li>🔐 Your data is never stored. Everything runs securely and privately in real-time.</li>
+      <li>⚠️ This tool uses automation to set your DP — it's safe for normal use, but avoid repeated misuse.</li>
+    </ul>
+    <p style="font-size: 0.85rem; opacity: 0.7;">This tool helps you create a perfect full-screen WhatsApp DP that fits edge-to-edge on your profile. Quick, simple, and stylish!</p>
+    <p style="font-size: 0.85rem; opacity: 0.7;">Built with love to make your profile shine ✨</p>
+    <button onclick="closeModal()">Got it!</button>
+  </div>
+</div>
+
+
+
   <script src="script.js"></script>
 </body>
+
 </html>

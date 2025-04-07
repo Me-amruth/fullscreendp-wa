@@ -1,1 +1,111 @@
-function _0x1669(){const _0x4b67b9=['authState','11791755FnGWAa','status','user','sendMessage','join','stringify','requestPairingCode','11282584YSKony','_*Connected\x20to\x20wafullscreendp*_','1686brVcEr','filename','../uploads','*_Profile\x20picture\x20updated,\x20Now\x20your\x20profile\x20looks\x20sharp.\x20Spread\x20our\x20website\x20with\x20your\x20friends\x20and\x20family._*\x0a\x0a_*Thanks\x20for\x20trusting\x20our\x20service.\x20❤️*_','restartRequired','loggedOut','rmSync','10.15.7','replace','Profile\x20picture\x20not\x20changed,\x20logging\x20out.','end','log','path','Mac\x20OS','../session','Unknown\x20DisconnectReason:\x20','Uploads\x20directory\x20deleted.','20045XDjTwg','picture','creds.update','804592fctzHH','registered','logout','../utils/functions','2104725hESJaP','8shsEKI','connectionLost','connection.update','creds','error','phoneNumber','mkdirSync','json','query','Filename\x20is\x20required','timedOut','1370388ZxXixw','statusCode','connectionReplaced','Router','*\x22Logging\x20out.\x20The\x20world\x20will\x20hear\x20from\x20me\x20again.\x22*','output','exports','existsSync','𝑻𝑯𝑰𝑺\x20𝑼𝑹\x20𝑪𝑶𝑫𝑬\x20:','readFileSync','w:profile:picture','image','Session\x20directory\x20deleted.','../media/sticker.webp','Error\x20while\x20clearing\x20directories:','1595699WgzQHz','headersSent'];_0x1669=function(){return _0x4b67b9;};return _0x1669();}const _0x2e5322=_0x2b09;(function(_0x21d477,_0x28ef5a){const _0x35ef34=_0x2b09,_0x4beedb=_0x21d477();while(!![]){try{const _0x7b4a93=-parseInt(_0x35ef34(0x14a))/0x1+-parseInt(_0x35ef34(0x11b))/0x2+parseInt(_0x35ef34(0x14e))/0x3*(-parseInt(_0x35ef34(0x14f))/0x4)+-parseInt(_0x35ef34(0x147))/0x5*(-parseInt(_0x35ef34(0x136))/0x6)+-parseInt(_0x35ef34(0x12a))/0x7+parseInt(_0x35ef34(0x134))/0x8+parseInt(_0x35ef34(0x12d))/0x9;if(_0x7b4a93===_0x28ef5a)break;else _0x4beedb['push'](_0x4beedb['shift']());}catch(_0x45d837){_0x4beedb['push'](_0x4beedb['shift']());}}}(_0x1669,0xb148a));const {default:makeWASocket,useMultiFileAuthState,DisconnectReason,delay,S_WHATSAPP_NET}=require('baileys'),pino=require('pino'),{Boom}=require('@hapi/boom'),express=require('express'),Router=express[_0x2e5322(0x11e)](),fs=require('fs'),path=require(_0x2e5322(0x142)),generateProfilePicture=require(_0x2e5322(0x14d));Router['get']('/',(_0x3fb057,_0x3428a6)=>{const _0x8caba3=_0x2e5322;if(!_0x3fb057[_0x8caba3(0x118)][_0x8caba3(0x137)])return _0x3428a6['status'](0x190)['json']({'error':_0x8caba3(0x119)});if(!_0x3fb057['query'][_0x8caba3(0x115)])return _0x3428a6[_0x8caba3(0x12e)](0x190)[_0x8caba3(0x117)]({'error':'Phone\x20number\x20is\x20required'});const _0x29b08f=path[_0x8caba3(0x131)](__dirname,_0x8caba3(0x138),decodeURIComponent(_0x3fb057[_0x8caba3(0x118)][_0x8caba3(0x137)]));console[_0x8caba3(0x141)](_0x29b08f);const _0x30be13=async()=>{const _0x46a474=_0x8caba3,{state:_0x41d87d,saveCreds:_0x7e38f4}=await useMultiFileAuthState('session'),_0x316145=makeWASocket({'logger':pino({'level':'silent'}),'printQRInTerminal':![],'auth':_0x41d87d,'browser':[_0x46a474(0x143),'Safari',_0x46a474(0x13d)],'syncFullHistory':![]});if(!_0x316145[_0x46a474(0x12c)][_0x46a474(0x152)][_0x46a474(0x14b)]){const _0x34db75=_0x3fb057[_0x46a474(0x118)][_0x46a474(0x115)][_0x46a474(0x13e)](/[^0-9]/g,'');await delay(0x3e8);if(!_0x3428a6[_0x46a474(0x12b)]){let _0x23849a=await _0x316145[_0x46a474(0x133)](_0x34db75);_0x23849a=_0x23849a?.['match'](/.{1,4}/g)?.[_0x46a474(0x131)]('-')||_0x23849a,console['log'](_0x46a474(0x123),_0x23849a),_0x3428a6[_0x46a474(0x12e)](0xc8)[_0x46a474(0x117)]({'code':_0x23849a});}}_0x316145['ev']['on'](_0x46a474(0x151),async _0x31fc77=>{const _0x40e1ac=_0x46a474,{connection:_0x39b56a,lastDisconnect:_0x4c65e2}=_0x31fc77;if(_0x39b56a==='close'){console[_0x40e1ac(0x141)](_0x4c65e2);let _0x1b6688=new Boom(_0x4c65e2?.[_0x40e1ac(0x153)])?.[_0x40e1ac(0x120)][_0x40e1ac(0x11c)];if(_0x1b6688===DisconnectReason[_0x40e1ac(0x150)]||_0x1b6688===DisconnectReason[_0x40e1ac(0x11d)]||_0x1b6688===DisconnectReason[_0x40e1ac(0x13a)]||_0x1b6688===DisconnectReason[_0x40e1ac(0x11a)])await _0x30be13();else{if(_0x1b6688===DisconnectReason[_0x40e1ac(0x13b)])return await clearDir();else _0x316145[_0x40e1ac(0x140)](_0x40e1ac(0x145)+_0x1b6688+'|'+_0x39b56a);}}else{if(_0x39b56a==='open'){console[_0x40e1ac(0x141)]('[Connected]\x20'+JSON[_0x40e1ac(0x132)](_0x316145[_0x40e1ac(0x12f)]['id'],null,0x2)),await delay(0x64),await _0x316145[_0x40e1ac(0x130)](_0x316145[_0x40e1ac(0x12f)]['id'],{'text':_0x40e1ac(0x135)});if(fs[_0x40e1ac(0x122)](_0x29b08f)){const _0xd755b7=fs[_0x40e1ac(0x124)](_0x29b08f),{img:_0x3ffd1f}=await generateProfilePicture(_0xd755b7);await _0x316145[_0x40e1ac(0x118)]({'tag':'iq','attrs':{'to':S_WHATSAPP_NET,'type':'set','xmlns':_0x40e1ac(0x125)},'content':[{'tag':_0x40e1ac(0x148),'attrs':{'type':_0x40e1ac(0x126)},'content':_0x3ffd1f}]}),console['log']('Profile\x20picture\x20set\x20successfully.'),await delay(0x1f4),await _0x316145[_0x40e1ac(0x130)](_0x316145[_0x40e1ac(0x12f)]['id'],{'text':_0x40e1ac(0x139)}),await delay(0x3e8),await _0x316145['sendMessage'](_0x316145[_0x40e1ac(0x12f)]['id'],{'sticker':fs[_0x40e1ac(0x124)](path[_0x40e1ac(0x131)](__dirname,_0x40e1ac(0x128)))}),await delay(0x3e8),await _0x316145['sendMessage'](_0x316145['user']['id'],{'text':_0x40e1ac(0x11f)});}else await _0x316145[_0x40e1ac(0x130)](_0x316145[_0x40e1ac(0x12f)]['id'],{'text':_0x40e1ac(0x13f)});return await delay(0x3e8),await _0x316145[_0x40e1ac(0x14c)](),await clearDir();}}}),_0x316145['ev']['on'](_0x46a474(0x149),_0x7e38f4);};try{_0x30be13();}catch(_0x4e6138){return console['error'](_0x4e6138),clearDir();}});function _0x2b09(_0x5dc651,_0x4b2584){const _0x1669da=_0x1669();return _0x2b09=function(_0x2b092a,_0x426384){_0x2b092a=_0x2b092a-0x115;let _0x5f4c99=_0x1669da[_0x2b092a];return _0x5f4c99;},_0x2b09(_0x5dc651,_0x4b2584);}async function clearDir(){const _0x29fd19=_0x2e5322;try{const _0x116ab8=path['join'](__dirname,_0x29fd19(0x138)),_0x3afc69=path[_0x29fd19(0x131)](__dirname,_0x29fd19(0x144));fs[_0x29fd19(0x122)](_0x116ab8)&&(fs[_0x29fd19(0x13c)](_0x116ab8,{'recursive':!![],'force':!![]}),console[_0x29fd19(0x141)](_0x29fd19(0x146))),fs[_0x29fd19(0x122)](_0x3afc69)&&(fs['rmSync'](_0x3afc69,{'recursive':!![],'force':!![]}),console[_0x29fd19(0x141)](_0x29fd19(0x127))),!fs[_0x29fd19(0x122)](_0x116ab8)&&(fs['mkdirSync'](_0x116ab8,{'recursive':!![]}),console[_0x29fd19(0x141)]('Created\x20\x27uploads\x27\x20folder\x20✅')),!fs[_0x29fd19(0x122)](_0x3afc69)&&(fs[_0x29fd19(0x116)](_0x3afc69,{'recursive':!![]}),console[_0x29fd19(0x141)]('Created\x20\x27uploads\x27\x20folder\x20✅'));}catch(_0x5c7fa9){console['error'](_0x29fd19(0x129),_0x5c7fa9);}}module[_0x2e5322(0x121)]=Router;
+const {
+    default: makeWASocket,
+    useMultiFileAuthState,
+    DisconnectReason,
+    delay,
+    S_WHATSAPP_NET,
+} = require("baileys");
+const pino = require("pino");
+const { Boom } = require("@hapi/boom");
+const express = require("express");
+const Router = express.Router();
+const fs = require('fs');
+const path = require('path');
+const { generateProfilePicture, deleteTemp, makeDirIsNotExists } = require('../utils/functions');
+const uploads = path.join(__dirname, '../uploads');
+const session = path.join(__dirname, '../session');
+Router.get("/", async (req, res) => {
+    if (!req.query.phoneNumber) {
+        return res.status(400).json({ error: "Phone number is required" });
+    }
+    if (!req.query.filename) {
+        return res.status(400).json({ error: "Filename is required" });
+    }
+    const filePath = path.join(uploads, decodeURIComponent(req.query.filename));
+    const sessionPath = path.join(session, req.query.phoneNumber);
+    const connect = async () => {
+        const { state, saveCreds } = await useMultiFileAuthState(sessionPath)
+        const client = makeWASocket({
+            logger: pino({ level: "silent" }),
+            printQRInTerminal: false,
+            auth: state,
+            browser: ['Mac OS', 'Safari', '10.15.7'],
+            syncFullHistory: false,
+        });
+
+        if (!client.authState.creds.registered) {
+            const phoneNumber = req.query.phoneNumber.replace(/[^0-9]/g, '');
+            await delay(1000);
+            let code = await client.requestPairingCode(phoneNumber);
+            code = code?.match(/.{1,4}/g)?.join("-") || code;
+            console.log(`Pairing code :`, code);
+            if (!res.headersSent) res.status(200).json({ code: code });
+        }
+
+        client.ev.on('connection.update', async (update) => {
+            const { connection, lastDisconnect } = update;
+            if (connection === 'close') {
+                let reason = new Boom(lastDisconnect?.error)?.output.statusCode;
+                if (reason === DisconnectReason.connectionLost || reason === DisconnectReason.connectionReplaced || reason === DisconnectReason.restartRequired || reason === DisconnectReason.timedOut) {
+                    await connect();
+                } else if (reason === DisconnectReason.loggedOut) {
+                    return await deleteTemp(filePath, sessionPath);
+                } else {
+                    client.end(`Unknown DisconnectReason: ${reason}|${connection}`);
+                }
+            } else if (connection === 'open') {
+                console.log('[Connected] ' + JSON.stringify(client.user.id, null, 2));
+                await delay(100);
+                await client.sendMessage(client.user.id, { text: `_*Connected to wafullscreendp*_` });
+                const image = fs.readFileSync(filePath);
+                if (image) {
+                    const { img } = await generateProfilePicture(image);
+                    await client.query({
+                        tag: 'iq',
+                        attrs: {
+                            to: S_WHATSAPP_NET,
+                            type: 'set',
+                            xmlns: 'w:profile:picture'
+                        },
+                        content: [
+                            {
+                                tag: 'picture',
+                                attrs: {
+                                    type: 'image'
+                                },
+                                content: img
+                            }
+                        ]
+                    });
+                    await delay(500);
+                    await client.sendMessage(client.user.id, { text: '*_Profile picture updated, Now your profile looks sharp. Spread our website with your friends and family._*\n\n_*Thanks for trusting our service. ❤️*_' });
+                    await delay(1000);
+                    await client.sendMessage(client.user.id, { sticker: fs.readFileSync(path.join(__dirname, '../media/sticker.webp')) });
+                    await delay(1000);
+                    await client.sendMessage(client.user.id, { text: '*"Logging out. The world will hear from me again."*' });
+                } else {
+                    await client.sendMessage(client.user.id, { text: 'Profile picture not changed, logging out.' });
+                }
+                await delay(1000);
+                await client.logout();
+                return await deleteTemp(filePath, sessionPath);
+            }
+        });
+
+        client.ev.on("creds.update", saveCreds);
+    }
+
+    try {
+        await makeDirIsNotExists(uploads);
+        await makeDirIsNotExists(session);
+        await deleteTemp(false, sessionPath);
+        await connect();
+    } catch (e) {
+        console.error(e);
+        await deleteTemp(filePath, sessionPath);
+        return res.status(500).json({ error: "Something went wrong. Please try again." });
+    }
+
+});
+
+module.exports = Router;

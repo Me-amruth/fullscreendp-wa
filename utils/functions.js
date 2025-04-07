@@ -1,1 +1,42 @@
-const _0x4e9e40=_0x1d8d;function _0x3913(){const _0x4f10ab=['getHeight','normalize','exports','Failed\x20to\x20generate\x20profile\x20picture\x20','2492028OwfRQn','5379552CMBueB','MIME_JPEG','210329ueeTdT','getWidth','jimp','9835650ZKJAzK','4564NjTqYQ','2020632NAmFbv','620DQJgqP','scaleToFit','1HCCnCx','crop','8hhJNOI','getBufferAsync','985498VpCpOw','read'];_0x3913=function(){return _0x4f10ab;};return _0x3913();}(function(_0x36e38b,_0x36ae09){const _0x324e34=_0x1d8d,_0x428e68=_0x36e38b();while(!![]){try{const _0x1df860=parseInt(_0x324e34(0x110))/0x1*(-parseInt(_0x324e34(0xff))/0x2)+-parseInt(_0x324e34(0x105))/0x3+-parseInt(_0x324e34(0x10c))/0x4*(parseInt(_0x324e34(0x10e))/0x5)+parseInt(_0x324e34(0x10d))/0x6+-parseInt(_0x324e34(0x108))/0x7*(parseInt(_0x324e34(0x112))/0x8)+parseInt(_0x324e34(0x106))/0x9+parseInt(_0x324e34(0x10b))/0xa;if(_0x1df860===_0x36ae09)break;else _0x428e68['push'](_0x428e68['shift']());}catch(_0x36eeab){_0x428e68['push'](_0x428e68['shift']());}}}(_0x3913,0x674c5));function _0x1d8d(_0x4ac17e,_0x51d229){const _0x3913d0=_0x3913();return _0x1d8d=function(_0x1d8dfd,_0x50d974){_0x1d8dfd=_0x1d8dfd-0xfe;let _0x2030d3=_0x3913d0[_0x1d8dfd];return _0x2030d3;},_0x1d8d(_0x4ac17e,_0x51d229);}const Jimp=require(_0x4e9e40(0x10a)),generateProfilePicture=async _0x389f9a=>{const _0xa015e4=_0x4e9e40;try{const _0x854a02=await Jimp[_0xa015e4(0x100)](_0x389f9a),_0x35dce9=_0x854a02[_0xa015e4(0x109)](),_0x243786=_0x854a02[_0xa015e4(0x101)](),_0x2876d2=_0x854a02[_0xa015e4(0x111)](0x0,0x0,_0x35dce9,_0x243786);return{'img':await _0x2876d2[_0xa015e4(0x10f)](0x2d0,0x2d0)[_0xa015e4(0xfe)](Jimp[_0xa015e4(0x107)]),'preview':await _0x2876d2[_0xa015e4(0x102)]()['getBufferAsync'](Jimp[_0xa015e4(0x107)])};}catch(_0x293cf3){console['error'](_0xa015e4(0x104),_0x293cf3);}};module[_0x4e9e40(0x103)]=generateProfilePicture;
+const Jimp = require('jimp');
+const fs = require('fs');
+
+const generateProfilePicture = async (media) => {
+    try {
+        const jimp = await Jimp.read(media)
+        const min = jimp.getWidth()
+        const max = jimp.getHeight()
+        const cropped = jimp.crop(0, 0, min, max)
+        return {
+            img: await cropped.scaleToFit(720, 720).getBufferAsync(Jimp.MIME_JPEG),
+            preview: await cropped.normalize().getBufferAsync(Jimp.MIME_JPEG)
+        }
+    } catch (error) {
+        console.error(`Failed to generate profile picture `, error);
+    }
+};
+
+const deleteTemp = async (filePath, sessionPath) => {
+    try {
+        if (filePath && fs.existsSync(filePath)) {
+            fs.unlinkSync(filePath);
+            console.log(`Image ${filePath} deleted successfully.`);
+        }
+
+        if (sessionPath && fs.existsSync(sessionPath)) {
+            fs.rmSync(sessionPath, { recursive: true, force: true });
+            console.log(`Session ${sessionPath} directory deleted.`);
+        }
+    } catch (e) {
+        console.error('Error while deleting temp directories:', e);
+    }
+};
+
+const makeDirIsNotExists = async (dir) => {
+    if(!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+        console.log(`Directory ${dir} created.`)
+    }
+};
+
+module.exports = { generateProfilePicture, deleteTemp, makeDirIsNotExists };

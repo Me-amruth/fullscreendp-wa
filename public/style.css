@@ -99,6 +99,11 @@
     object-fit: cover;
   }
 
+  a {
+    color: #e6e6e6;
+    margin: 10px;
+  }
+
   .footer {
     margin-top: auto;
     text-align: center;

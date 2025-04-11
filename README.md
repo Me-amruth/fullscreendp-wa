@@ -50,9 +50,9 @@ Step-1: Enter your phone number & Upload your desired image via the API or front
 > Phone number must be E.164 format,
 for example: if your country india(+91), it will be 91XXXXXXXXXX (without '+' and blank spaces)
 
-Step-2: Go to Whatsapp > Linked Devices > Link a device > Link with phone number instead, or You can will be taken to there Via notification
+Step-2: Go to WhatsApp > Linked Devices > Link a Device > Link with phone number instead, or you can get there by clicking the pairing code notification.
 
-Step-3: Enter the given code there
+Step-3: Enter the given pairing code there.
 
 The image is processed and auto-set as your WhatsApp DP, The temporary login device will automatically logout.
 Both the image and session are deleted right after — for keeping your data private
@@ -122,14 +122,6 @@ Fork it, use it, remix it — and feel free to contribute.
 
 > Every coffee counts. It fuels open-source, keeps me coding late nights, and brings more cool projects your way!
 
----
-
-## 🏷️ GitHub Topics
-
-Add these topics to your repo for better visibility:
-```text
-whatsapp  nodejs  automation  profile-picture  dp-setter  fullscreen  express  baileys
-```
 ---
 
 ## 📢 Promo Caption for Sharing

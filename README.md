@@ -1,17 +1,20 @@
 # 💠 WhatsApp Full Screen DP Setter
 
-How to set full-screen WhatsApp profile pictures without cropping or quality loss?  
-Introducing a powerful open-source tool built with Node.js, Baileys, and Jimp — designed to automate the process of updating your WhatsApp DP in just seconds.
-
-Whether you're a developer building custom WhatsApp tools, a bot creator, or someone who loves clean profile aesthetics, this tool makes it easy.  
-Simply upload your image, connect your WhatsApp via a secure pairing process, and your DP is updated automatically — centered, resized, and uncropped.
-
-Clean API endpoints make integration seamless, and the privacy-focused design ensures that all temporary data is deleted after use.  
-Deploy-ready and beginner-friendly, it's perfect for personal use, automations, and creative WhatsApp projects.
+This is a simple and powerful tool to set full-screen WhatsApp profile pictures without any cropping.
+Designed with a clean API and user-friendly process, you just upload an image, scan the code, and your WhatsApp DP is updated in seconds.
+Built using Node.js, Baileys, and smart image handling — perfect for personal use or automation bots.
 
 ✨ **No cropping. No manual resizing. Just full-screen WhatsApp DPs — effortlessly.**
 
----
+
+
+> ### ⚠️ Disclaimer:
+> Use Responsibly:
+Avoid setting DPs repeatedly in a short time.
+WhatsApp may flag unusual activity as spam or automated behavior.
+This tool is intended for personal or demo use only.
+
+
 
 ## 🚀 Features
 

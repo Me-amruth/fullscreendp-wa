@@ -5,11 +5,6 @@
     { "src": "routes/*.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "handle": "filesystem" },
-
-    { "src": "^/$", "dest": "index.js" },
-    { "src": "^/connect$", "dest": "routes/connection.js" },
-    { "src": "^/clear$", "dest": "routes/clear.js" },
-    { "src": "^/upload$", "dest": "routes/uploader.js" }
+    { "src": "/", "dest": "public/" },
   ]
 }

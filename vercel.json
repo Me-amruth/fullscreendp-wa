@@ -4,8 +4,9 @@
     { "src": "index.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/connect", "dest": "index.js" },
-    { "src": "/clear", "dest": "index.js" },
-    { "src": "/upload", "dest": "index.js" }
+    { "src": "/", "dest": "index.js" },
+    { "src": "/connect", "dest": "routes/connection.js" },
+    { "src": "/clear", "dest": "routes/clear.js" },
+    { "src": "/upload", "dest": "routes/uploader.js" }
   ]
 }

@@ -9,6 +9,6 @@
     { "src": "^/connect$", "dest": "routes/connection.js" },
     { "src": "^/clear$", "dest": "routes/clear.js" },
     { "src": "^/upload$", "dest": "routes/uploader.js" },
-    { "handle": "filesystem" }  // 🧠 This tells Vercel to serve static files in public/
+    { "handle": "filesystem" }
   ]
 }
